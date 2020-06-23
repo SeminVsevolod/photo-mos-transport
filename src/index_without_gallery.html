@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+
+	<title>#fototransport2019 - Фотофестиваль - Московский транспорт</title>
+
+	<!--	Здесь будут сжатые стили для Google Page Speed	-->
+	<style>
+		html{-webkit-box-sizing:border-box;box-sizing:border-box}*,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit}body{margin:0;font-family:"Futura PT",Calibri,sans-serif;background-color:#fff;color:#000}h1{font-weight:500}.btn,.btn_inst:after{font-family:"Futura PT Demi",Calibri,sans-serif;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:nowrap;flex-wrap:nowrap;white-space:nowrap;min-width:50px;height:50px;padding:0 30px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:none;color:#fff;background-color:#d23830;font-size:18px;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out;text-decoration:none}.active.btn_inst:after,.btn.active,.btn:active,.btn:visited,.btn_inst:active:after,.btn_inst:visited:after{background-color:#be271f}.link,.tab{font-family:"Futura PT Book",Calibri,sans-serif;position:relative;font-size:18px;color:#464646;text-decoration:none;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.link:after,.tab:after{width:0;content:'';display:block;position:absolute;bottom:-10px;border-bottom:2px solid #d93a2f;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}.link:visited,.tab:visited{color:#464646}.active.tab:after,.link.active:after,.link:active:after,.link:hover:after,.tab:active:after,.tab:hover:after{width:100%}.main{margin-top:100px;width:100%;height:640px;max-height:640px;padding-bottom:60px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;background-image:url(../img/main-bg@2x.jpg);background-repeat:no-repeat;background-size:cover}.main__wrapper{padding:0 24px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:#fff;max-width:768px}.main__pre-title{margin:0;font-size:28px;font-weight:700}.main__title{margin:0;font-size:52px;font-weight:700}.main__lead{font-family:"Futura PT Book",Calibri,sans-serif;font-size:22px;font-weight:400;text-align:center}.header{padding:0 24px;-webkit-box-shadow:0 2px 4px 0 rgba(0,0,0,.5);box-shadow:0 2px 4px 0 rgba(0,0,0,.5);background-color:#fff;position:fixed;top:0;left:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:100%;height:100px;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;z-index:110}.header__main{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__title{text-decoration:none;margin:0 0 0 30px;-webkit-box-flex:1;-ms-flex:1;flex:1;font-size:28px;font-weight:700;color:#464646}.header__logo{-o-object-fit:contain;object-fit:contain}.header__logo_trans{margin-left:32px;width:65px;min-width:65px;max-width:65px;height:81px;min-height:81px;max-height:81px;background:url(../img/sprite.svg) no-repeat;background-position:32.635983263598% 56.774193548387%}.header__logo_gov{position:relative;width:77px;min-width:77px;max-width:77px;height:79px;min-height:79px;max-height:79px;background-image:url(../img/mos-logo@2x.png);background-repeat:no-repeat;background-size:cover}.header__logo_gov:after{content:'';display:block;position:absolute;right:-16px;height:53px;width:16px;border-right:1px solid #000}.header__links,.header__nav{padding:0;margin:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.header__toggle{display:none}.header__links{margin-left:12px}.header__li{margin-right:30px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__li:last-child{margin-right:0}.header__submit{margin-left:30px}.menu{width:100%;position:fixed;top:100px;display:none;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;z-index:100;background-color:#f4f4f4}@media screen and (max-width: 1023px){.menu.show{display:-webkit-box;display:-ms-flexbox;display:flex}.header{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.header__links,.header__submit{display:none}.header__toggle{border:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:all .2s;transition:all .2s;cursor:pointer;width:32px;height:32px;background:url(../img/mobile-menu.svg) no-repeat center center}}@media screen and (max-width: 767px){#how-to{top:-50px}.rounded-gallery,.section__gifts{margin-top:50px}.header{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.header__links,.header__submit,.header__title{display:none}.main{padding-bottom:30px;height:480px;max-height:480px}.main__wrapper{padding:0 12px}.main__pre-title{font-size:22px}.main__title{text-align:center;font-size:36px}.main__lead{font-size:16px}}
+	</style>
+</head>
+
+<body>
+<header class="header">
+	<div class="header__main">
+		<a href="http://mos.ru/" target="_blank"
+			 class="header__logo header__logo_gov" title="Сайт «Правительство московской области»"></a>
+		<a href="http://transport.mos.ru/" target="_blank"
+			 class="header__logo header__logo_trans" title="Сайт «Московский Транспорт»"></a>
+		<a href="index.html" class="header__title">#fototransport2019</a>
+	</div>
+
+	<nav class="header__nav">
+		<button class="header__toggle" id="toggle"></button>
+		<ul class="header__links">
+			<li class="header__li">
+				<a href="#gifts" class="link header__link active">Призы</a>
+			</li>
+			<li class="header__li">
+				<a href="rules.html" class="link header__link">Правила</a>
+			</li>
+		</ul>
+		<a role="button" href="#how-to" class="btn header__submit">Принять участие</a>
+	</nav>
+</header>
+<!-- /.header -->
+
+	<div id="menu" class="menu">
+		<a role="button" href="#how-to" class="btn menu__submit">Принять участие</a>
+		<a href="index.html#gifts" class="link menu__link active">Призы</a>
+		<a href="rules.html" class="link menu__link">Правила</a>
+		<a href="index.html" class="link menu__link menu__link_hashtag">#fototransport2019</a>
+	</div>
+	
+	<main class="main">
+		<div class="main__wrapper">
+			<h1 class="main__pre-title">Фотофестиваль</h1>
+			<h2 class="main__title">Московский транспорт</h2>
+			<p class="main__lead">Вашу фотографию увидят миллионы! Участвуйте в конкурсе и ваша фотография попадет в специальный вагон метро и украсит уникальную фотовыставку!</p>
+			<a role="button" href="#how-to" class="btn main__submit">Принять участие</a>
+		</div>
+		<!-- /.main__wrapper -->
+	</main>
+	<!-- /.main -->
+
+	<section class="section">
+		<div id="how-to" class="section-anchor"></div>
+		<div class="section__wrapper">
+			<h2 class="section__title">Как принять участие</h2>
+			<p class="section__lead">Будьте креативными и делайте снимки любимых мест Москвы, связанных с поездками в городском транспорте (внутри транспорта, на остановке, рядом со входом метро, рядом со стоянками велопроката, на станциях метро, возле объектов транспортной инфраструктуры и т.д.).</p>
+
+			<div class="section__row section__row_aifs">
+				<div class="section__column section__column_flex_1">
+					<img src="img/icon-2.svg" alt="Подпишитесь на @fototransportmos" class="section__logo">
+					<span class="section__hint">Первым делом</span>
+					<p class="section__text">Подпишитесь <br>на <a href="https://www.instagram.com/foto_mostransport/" class="section__text_link">@fototransportmos</a></p>
+				</div>
+				<!-- /.section__column section__column_flex_1 -->
+				<div class="section__column section__column_flex_1">
+					<img src="img/icon-1.svg" alt="Опубликуйте фото Московского транпорта с хештегом #fototransport2019" class="section__logo">
+					<span class="section__hint">С 21 ноября по 15 декабря 2019 года</span>
+					<p class="section__text">Опубликуйте фото <a href="index.html#mos-transport" class="section__text_link">Московского транпорта</a> с хештегом #fototransport2019</p>
+					<button id="copy-hashtag" class="tag section__tag">Скопировать хэштег</button>
+				</div>
+				<!-- /.section__column section__column_flex_1 -->
+				<div class="section__column section__column_flex_1">
+					<img src="img/icon-4.svg" alt="Принимайте участие в голосовании на нашем сайте c 16 декабря" class="section__logo">
+					<span class="section__hint">Обязательно</span>
+					<p class="section__text">Отметьте в подписи к фото двух друзей москвичей</p>
+				</div>
+				<!-- /.section__column section__column_flex_1 -->
+				<div class="section__column section__column_flex_1">
+					<img src="img/icon-3.svg" alt="Принимайте участие в голосовании на нашем сайте c 16 декабря" class="section__logo">
+					<span class="section__hint">С 16 по 21 декабря 2019 года</span>
+					<p class="section__text">Принимайте участие в <a href="index_until_vote.html" class="section__text_link">голосовании</a> на нашем сайте</p>
+				</div>
+				<!-- /.section__column section__column_flex_1 -->
+			</div>
+			<a role="button" href="https://www.instagram.com/foto_mostransport/" class="btn btn_inst section__submit">Открыть Instagram</a>
+		</div>
+		<!-- /.section__wrapper -->
+	</section>
+	<!-- /.section -->
+
+	<section id="gallery" class="section section_light">
+		<div class="section__wrapper">
+			<h2 class="section__title">Работы участников</h2>
+			<p class="section__lead">9 номинаций = 27 призовых мест, и возможность выиграть много призов!
+				<br>Победителей фотофестиваля определяет специальная комиссия.</p>
+
+			<ul class="section__rounded-gallery rounded-gallery">
+				<li class="rounded-gallery__elem">
+					<img class="rounded-gallery__img" src="img/rounded-gallery/nom-1@2x.png" alt="Изображение 1">
+					<span class="rounded-gallery__text">Метро</span>
+				</li>
+				<li class="rounded-gallery__elem">
+					<img class="rounded-gallery__img" src="img/rounded-gallery/nom-3@2x.png" alt="Изображение 2">
+					<span class="rounded-gallery__text">МЦК</span>
+				</li>
+				<li class="rounded-gallery__elem">
+					<img class="rounded-gallery__img" src="img/rounded-gallery/nom-5@2x.png" alt="Изображение 3">
+					<span class="rounded-gallery__text">Трамвай</span>
+				</li>
+				<li class="rounded-gallery__elem">
+					<img class="rounded-gallery__img" src="img/rounded-gallery/nom-7@2x.png" alt="Изображение 4">
+					<span class="rounded-gallery__text">Автобус</span>
+				</li>
+				<li class="rounded-gallery__elem">
+					<img class="rounded-gallery__img" src="img/rounded-gallery/nom-9@2x.png" alt="Изображение 5">
+					<span class="rounded-gallery__text">Электробус</span>
+				</li>
+				<li class="rounded-gallery__elem">
+					<img class="rounded-gallery__img" src="img/rounded-gallery/nom-2@2x.png" alt="Изображение 6">
+					<span class="rounded-gallery__text">Такси</span>
+				</li>
+				<li class="rounded-gallery__elem">
+					<img class="rounded-gallery__img" src="img/rounded-gallery/nom-4@2x.png" alt="Изображение 7">
+					<span class="rounded-gallery__text">Каршеринг</span>
+				</li>
+				<li class="rounded-gallery__elem">
+					<img class="rounded-gallery__img" src="img/rounded-gallery/nom-6@2x.png" alt="Изображение 8">
+					<span class="rounded-gallery__text">Велосипед</span>
+				</li>
+				<li class="rounded-gallery__elem">
+					<img class="rounded-gallery__img" src="img/rounded-gallery/nom-8@2x.png" alt="Изображение 9">
+					<span class="rounded-gallery__text">МЦД</span>
+				</li>
+				<li class="rounded-gallery__elem">
+					<img class="rounded-gallery__img" src="img/rounded-gallery/nom-0@2x.png" alt="Изображение 9">
+					<span class="rounded-gallery__text">Инфраструктура</span>
+				</li>
+			</ul>
+		</div>
+		<!-- /.section__wrapper -->
+
+	</section>
+	<!-- /.section -->
+
+	<section id="gifts" class="section">
+		<div class="section__wrapper">
+			<h2 class="section__title">Призы и подарки</h2>
+			<p class="section__lead">9 номинаций = 27 призовых мест, и возможность выиграть много призов!
+				<br>Победителей фотофестиваля определяет специальная комиссия.</p>
+			<div class="section__gifts">
+				<div class="section__row section__row_full">
+					<div class="section__column">
+						<h3 class="section__h3">Карта Тройка</h3>
+						<p class="section__text section__text_tal">Лимитированной серии с изображением работы победителя</p>
+					</div>
+					<!-- /.section__column -->
+					<img src="img/gifts/gift-1@2x.png" alt="Карта Тройка" class="section__round-img">
+					<!-- /.section__round-img -->
+				</div>
+				<!-- /.section__row -->
+
+				<div class="section__row section__row_full">
+					<div class="section__column">
+						<h3 class="section__h3">Оформление поезда</h3>
+						<p class="section__text section__text_tal">Участие работ победителей в оформлении поезда метро</p>
+					</div>
+					<!-- /.section__column -->
+					<img src="img/gifts/gift-5@2x.png" alt="Оформление поезда" class="section__round-img">
+					<!-- /.section__round-img -->
+				</div>
+				<!-- /.section__row -->
+
+				<div class="section__row section__row_full">
+					<div class="section__column">
+						<h3 class="section__h3">Фотольбом</h3>
+						<p class="section__text section__text_tal">С работами победителей конкурса и профессиональных фотографов</p>
+					</div>
+					<!-- /.section__column -->
+					<img src="img/gifts/gift-3@2x.png" alt="Фотольбом" class="section__round-img">
+					<!-- /.section__round-img -->
+				</div>
+				<!-- /.section__row -->
+
+				<div class="section__row section__row_full">
+					<div class="section__column">
+						<h3 class="section__h3">Фотовыставка</h3>
+						<p class="section__text section__text_tal">Работ победителей в открытой галерее на станции метро Выставочная</p>
+					</div>
+					<!-- /.section__column -->
+					<img src="img/gifts/gift-4@2x.png" alt="Фотовыставка" class="section__round-img">
+					<!-- /.section__round-img -->
+				</div>
+				<!-- /.section__row -->
+			</div>
+
+			<a role="button" href="#how-to" class="btn section__submit">Принять участие</a>
+		</div>
+		<!-- /.section__wrapper -->
+	</section>
+	<!-- /.section -->
+
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__row footer__row_sb">
+				<div class="footer__main">
+					<a href="http://mos.ru/" target="_blank"
+						 class="footer__logo footer__logo_gov" title="Сайт «Правительство московской области»"></a>
+					<a href="http://transport.mos.ru/" target="_blank"
+						 class="footer__logo footer__logo_trans" title="Сайт «Московский Транспорт»"></a>
+					<span class="footer__title"></span>
+				</div>
+				<nav class="footer__nav">
+					<ul class="footer__links">
+						<li class="footer__li">
+							<a href="#gifts" class="link footer__link">Призы</a>
+						</li>
+						<li class="footer__li">
+							<a href="rules.html" class="link footer__link">Правила</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="footer__row footer__row_sb">
+				<ul class="footer__links footer__links_column">
+					<li class="footer__li footer__li_mt0">
+						<a href="mailto:info@fototransportmos.ru" class="link footer__link footer__link_contact">info@fototransportmos.ru</a>
+					</li>
+				</ul>
+
+				<div class="footer__soc">
+					<a href="https://www.facebook.com/Фотофестиваль-Московский-транспорт-100749844732317" target="_blank" class="footer__link_soc footer__link_soc_fb" id="bx_651765591_9"></a>
+					<a href="https://vk.com/foto_mostransport" target="_blank" class="footer__link_soc footer__link_soc_vk" id="bx_651765591_10"></a>
+					<a href="https://www.instagram.com/foto_mostransport/" target="_blank" class="footer__link_soc footer__link_soc_in" id="bx_651765591_11"></a>
+					<a href="https://ok.ru/group/61635973021746" target="_blank" class="footer__link_soc footer__link_soc_ok" id="bx_651765591_12"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /.footer -->
+	<script type="application/javascript">
+		//Для мобильного меню
+		var toggle = document.getElementById('toggle');
+		var menu = document.getElementById('menu');
+		var handler = function (e) {
+			e.preventDefault();
+			toggle.classList.toggle('open');
+			menu.classList.toggle('show');
+			setTimeout(function () {
+				if (!menu.classList.contains('show') && toggle.classList.contains('open')) {
+					toggle.removeClass('open');
+				}
+				if (menu.classList.contains('show') && !toggle.classList.contains('open')) {
+					toggle.addClass('open');
+				}
+			}, 400);
+			e.preventDefault();
+		};
+		toggle.addEventListener('click', handler);
+		toggle.addEventListener('dblclick', handler);
+
+		//Для гладкого перехода к якорям
+		var anchors = document.querySelectorAll('a[href*="#"]');
+		anchors.forEach((anchor) => {
+			anchor.addEventListener('click', function (e) {
+				menu.classList.remove('show');
+				toggle.classList.remove('open');
+				var blockID = anchor.getAttribute('href').substr(1);
+				if (document.getElementById(blockID)) {
+					e.preventDefault();
+					document.getElementById(blockID).scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+			});
+		});
+
+		//Скопировать хэштэг hashTag
+		var hashTag = '#fototransport2019';
+		var buttonCopy = document.getElementById('copy-hashtag');
+		buttonCopy.addEventListener('click', function (e) {
+			e.preventDefault();
+			copyToClipboard(hashTag);
+		});
+
+		/**
+		 * Скопировать в буфер обмена
+		 * @param text
+		 * @returns {boolean|void}
+		 */
+		function copyToClipboard(text) {
+			if (window.clipboardData && window.clipboardData.setData) {
+				// IE specific code path to prevent textarea being shown while dialog is visible.
+				return clipboardData.setData("Text", text);
+
+			} else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+				var textarea = document.createElement("textarea");
+				textarea.textContent = text;
+				textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in MS Edge.
+				document.body.appendChild(textarea);
+				textarea.select();
+				try {
+					return document.execCommand("copy");  // Security exception may be thrown by some browsers.
+				} catch (ex) {
+					console.warn("Copy to clipboard failed.", ex);
+					return false;
+				} finally {
+					document.body.removeChild(textarea);
+				}
+			}
+		}
+	</script>
+	<link rel="stylesheet" href="css/style.css?v=1">
+</body>
+</html>

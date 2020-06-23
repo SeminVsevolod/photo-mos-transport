@@ -1,0 +1,13 @@
+@mixin icon-before ($icon-path,$icon-w,$icon-h)
+	display: block
+	background: url($icon-path) center no-repeat
+	background-size: 100%
+	position: absolute
+	left: -12px
+	width: $icon-w
+	height: $icon-h
+	margin-top: 6px
+	content: ''
+@mixin link-style
+	color: $color__white
+	text-decoration: none

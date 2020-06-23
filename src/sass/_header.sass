@@ -1,0 +1,75 @@
+.header
+  padding: 0 24px
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+  background-color: $color__white
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  height: 100px
+  transition: all 0.3s ease-in-out
+  z-index: 110
+  &__main
+    display: flex
+    align-items: center
+  &__title
+    text-decoration: none
+    margin: 0 0 0 30px
+    flex: 1
+    font-size: 28px
+    font-weight: bold
+    color: $color__greyish-brown
+  &__logo
+    object-fit: contain
+    &_trans
+      margin-left: 32px
+      width: 65px
+      min-width: 65px
+      max-width: 65px
+      height: 81px
+      min-height: 81px
+      max-height: 81px
+      background: url($url__images + 'sprite.svg') no-repeat
+      background-position: 32.63598326359833% 56.774193548387096%
+
+    &_gov
+      position: relative
+      width: 77px
+      min-width: 77px
+      max-width: 77px
+      height: 79px
+      min-height: 79px
+      max-height: 79px
+      background-image: url($url__images + 'mos-logo@2x.png')
+      background-repeat: no-repeat
+      background-size: cover
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        right: -16px
+        height: 53px
+        width: 16px
+        border-right: 1px solid $color__black
+
+  &__nav, &__links
+    padding: 0
+    margin: 0
+    display: flex
+    flex-direction: row
+  &__toggle
+    display: none
+  &__links
+    margin-left: 12px
+  &__li
+    margin-right: 30px
+    display: flex
+    align-items: center
+    &:last-child
+      margin-right: 0
+
+  &__submit
+    margin-left: 30px

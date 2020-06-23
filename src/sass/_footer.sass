@@ -1,0 +1,122 @@
+.footer
+  font-family: "Futura PT Demi", Calibri, sans-serif
+  padding: 60px 24px
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+  background-color: $color__reddish
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: space-between
+  width: 100%
+  transition: all .5s ease-in-out
+  overflow: hidden
+  z-index: 100
+  &__main
+    display: flex
+    align-items: center
+  &__wrapper
+    width: 100%
+    max-width: $width__wide
+  &__row
+    width: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-bottom: 45px
+    &:last-child
+      margin-bottom: 0
+    &_sb
+      justify-content: space-between
+  &__title
+    margin: 0 0 0 30px
+    flex: 1
+    font-size: 28px
+    font-weight: bold
+    color: $color__greyish-brown
+  &__logo
+    object-fit: contain
+    &_trans
+      margin-left: 32px
+      width: 65px
+      min-width: 65px
+      max-width: 65px
+      height: 81px
+      min-height: 81px
+      max-height: 81px
+      position: relative
+      background-image: url($url__images + 'svg-deptrans-logo-white.svg')
+      background-repeat: no-repeat
+
+    &_gov
+      position: relative
+      width: 77px
+      min-width: 77px
+      max-width: 77px
+      height: 79px
+      min-height: 79px
+      max-height: 79px
+      background-image: url($url__images + 'mos-logo-white@2x.png')
+      background-repeat: no-repeat
+      background-size: cover
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        right: -16px
+        height: 53px
+        width: 16px
+        border-right: 1px solid $color__white
+
+  &__nav, &__links
+    padding: 0
+    margin: 0
+    display: flex
+    flex-direction: row
+  &__links
+    &_column
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+  &__li
+    margin-right: 30px
+    display: flex
+    align-items: center
+    &:last-child
+      margin-right: 0
+  &__link
+    &, &:visited, &:hover, &:active
+      color: $color__white
+    &:hover
+      opacity: .7
+  &__paragraph
+    flex: 1
+    margin: 0
+    color: $color__white
+    font-size: 14px
+  &__last-paragraphs
+    display: flex
+    flex-direction: row
+    flex: 2
+  &__soc
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+  &__link_soc
+    width: 30px
+    height: 30px
+    margin-right: 12px
+    background: url($url__images + 'sprite.svg') no-repeat
+    transition: all .3s ease-in-out
+    &:last-child
+      margin-right: 0
+    &:hover
+      opacity: 0.7
+    &_fb
+      background-position: 86.3963503649635% 32.52427184466019%
+    &_vk
+      background-position: 98.07518248175182% 92.23300970873787%
+    &_in
+      background-position: 86.3963503649635% 17.961165048543688%
+    &_ok
+      background: url($url__images + 'svg-i-ok.svg') no-repeat

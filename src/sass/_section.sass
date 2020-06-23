@@ -1,0 +1,179 @@
+.section
+  position: relative
+  padding: 100px 0 120px
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-end
+  background: $color__white-two
+  #how-to, .section-anchor
+    width: 10px
+    height: 10px
+    content: ''
+    top: -100px
+    position: absolute
+    left: 0
+  &_light
+    background: $color__white
+  &_dark
+    background-color: $color__black-two
+    .section__h1
+      color: $color__white
+    .section__lead
+      color: rgba(255, 255, 255, 0.6)
+  &_awards
+    padding-bottom: 0
+    iframe
+      width: 80vw
+      max-width: 851px
+
+      height: 50vw
+  &_winners
+    padding-bottom: 0
+  &_mt100
+    margin-top: 100px
+  &_pt60
+    padding-top: 60px
+  &_fdr
+    flex-direction: row
+  &_jcc
+    justify-content: center
+  &_rules
+    @extend .section_light,.section_mt100,.section_pt60,.section_fdr, .section_jcc
+  &__wrapper
+    padding: 0 24px
+    margin: 0 30px
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    color: $color__white
+    max-width: $width__wide
+    &_jcfs
+      justify-content: flex-start
+    &_aifs
+      align-items: flex-start
+    &_rules
+      flex-direction: row
+      @extend .section__wrapper_aifs
+  &__title
+    margin: 0
+    font-size: 36px
+    font-weight: bold
+    text-align: center
+    color: $color__black
+    &_how-to
+      margin-top: 100px
+    &_mt120
+      margin-top: 120px
+  &__lead
+    margin: 20px 0 40px
+    font-family: "Futura PT Book", Calibri, sans-serif
+    font-size: 22px
+    text-align: center
+    font-weight: normal
+    color: $color__paragraph
+    &_mb0
+      margin-bottom: 0
+  &__paragraph
+    @extend .section__lead
+    margin: 0 0 40px
+    text-align: left
+  &__text
+    font-size: 22px
+    text-align: center
+    font-weight: normal
+    color: $color__black
+    margin: 0
+    &_tal
+      text-align: left
+    &_link
+      color: $color__reddish
+      text-decoration: none
+      cursor: pointer
+      &:hover, &:visited, &:active
+        color: $color__reddish-two
+      &:hover
+        border-bottom: 1px dotted
+  &__hint
+    @extend .section__lead
+    margin: 24px 0 8px
+    color: $color__paragraph
+    letter-spacing: -0.41px
+    font-size: 18px
+  &__tag
+    margin-top: 10px
+  &__row
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    &_aifs
+      align-items: flex-start
+    &_full
+      width: 100%
+  &__video
+    max-width: 856px
+    max-height: 521px
+
+  &__tabs
+    margin-top: 40px
+  &__gifts
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    .section__row:nth-child(even)
+      flex-direction: row-reverse
+      .section__round-img
+        margin-right: 16px
+    .section__row:nth-child(odd)
+      .section__round-img
+        margin-left: 16px
+    .section__column
+      align-items: flex-start
+      max-width: 380px
+  &__round-img
+    max-width: 460px
+  &__column
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &_flex_1
+      flex: 1
+  &__h1, &__h2, &__h3
+    font-weight: bold
+    color: $color__black
+    margin: 0 0 20px 0
+    text-align: center
+  &__h1
+    font-size: 52px
+    &_mb0
+      margin-bottom: 0
+    &_tac
+      text-align: center
+  &__h2
+    font-size: 36px
+    position: relative
+  &__h3
+    font-family: "Futura PT Demi", Calibri, sans-serif
+    font-size: 28px
+    font-weight: bold
+  &__h4
+    margin: 0
+    font-family: "Futura PT Book", Calibri, sans-serif
+    font-size: 22px
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    color: $color__black
+  &__submit
+    margin-top: 50px
+    &_mt0
+      margin-top: 0

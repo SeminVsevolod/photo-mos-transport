@@ -1,0 +1,321 @@
+/*стили от 0 до 1023*/
+//@media screen and (max-width: 1279px)
+.menu
+  width: 100%
+  position: fixed
+  top: 100px
+  display: none
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+  z-index: 100
+  background-color: $color__white-two
+  &_rules
+    .menu__link_rules
+      max-width: 150px
+      text-overflow: ellipsis
+      word-break: break-word
+      font-size: 22px
+      color: $color__reddish
+      margin-right: 0
+      margin-bottom: 12px
+      &:visited, &:hover, &:active
+        color: $color__reddish-two
+
+  &:after
+    top: 100%
+    content: ''
+    width: 100vw
+    height: 100vh
+    background-color: rgba(0,0,0,0.8)
+    position: absolute
+    display: block
+    z-index: 1
+  &__submit
+    text-align: center
+    justify-content: center
+    height: 50px
+    width: 100%
+  &__link
+    font-family: "Futura PT", Calibri, sans-serif
+    margin: 20px 24px 0
+    font-size: 18px
+    text-decoration: none
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    color: $color__greyish-brown
+    &:visited, &:hover, &:active
+      color: $color__greyish-brown
+    &_hashtag
+      margin: 30px 24px 40px
+      font-weight: bold
+      font-stretch: normal
+      color: $color__greyish-brown
+
+/*стили от 0 до 1023*/
+@media screen and (max-width: 1023px)
+  .menu.show
+    display: flex
+  .header
+    justify-content: space-between
+    &__links, &__submit
+      display: none
+    &__toggle
+      border: none
+      user-select: none
+      display: flex
+      transition: all 0.2s
+      cursor: pointer
+      width: 32px
+      height: 32px
+      background: url($url__images + 'mobile-menu.svg') no-repeat center center
+    &__toggle.open
+      background: url($url__images + 'close.svg') no-repeat center center
+
+  .section
+    &__row.tabs
+      align-items: flex-start
+      flex-direction: row
+      min-height: 40px
+      max-width: 100%
+      overflow-x: auto
+      overflow-y: hidden
+      &::-webkit-scrollbar
+        height: 6px
+        background-color: transparent
+      &::-webkit-scrollbar-thumb
+        background-color: #b2b2b2
+        border-radius: 4px
+        cursor: pointer
+      &::-webkit-scrollbar-track
+        background-color: transparent
+    &__wrapper
+      &_rules
+        margin: 100px 0 0 0
+        .aside
+          display: none
+    &_rules
+      .section__wrapper
+        margin: 0
+
+  .footer
+    &__last-paragraphs
+      flex-direction: column
+    &__row
+      &:last-child
+        max-width: 100%
+        flex-wrap: wrap
+        .footer__paragraph:first-child, .footer__last-paragraphs
+          flex: 1
+          min-width: 50%
+          width: 50%
+          .footer__paragraph
+            min-width: 100%
+            width: 100%
+
+  .gallery
+    margin-top: 60px
+    &__elem
+      width: 33.33%
+
+  .modal
+    &__wrapper
+      max-width: 720px
+      max-height: 352px
+    &__img
+      max-width: 352px
+
+/*стили от 0 до 767*/
+@media screen and (max-width: 767px)
+  #how-to
+    top: -50px
+
+  .section__gifts, .rounded-gallery
+    margin-top: 50px
+
+  .header
+    justify-content: space-between
+    &__title, &__links, &__submit
+      display: none
+
+  .main
+    padding-bottom: 30px
+    height: 480px
+    max-height: 480px
+    &__wrapper
+      padding: 0 12px
+    &__pre-title
+      font-size: 22px
+    &__title
+      text-align: center
+      font-size: 36px
+    &__lead
+      font-size: 16px
+
+  .section
+    padding: 50px 0 60px
+    &__h1
+      font-size: 36px
+      &_tac
+        text-align: center
+    &__h2
+      font-size: 28px
+    &__h4
+      font-size: 22px
+    &__title
+      font-size: 28px
+      &_mt120
+        margin-top: 60px
+    &__lead, &__text, &__paragraph
+      font-size: 16px
+    &__lead
+      margin: 20px 0 10px
+    &__row
+      flex-direction: column
+      &_aifs
+        flex-direction: row
+        flex-wrap: wrap
+    &__column
+      width: 100%
+      &:not(:first-child)
+        margin-top: 30px
+      &_flex_1
+        width: 50%
+        min-width: 50%
+        &:first-child
+          margin-top: 30px
+
+    &__submit
+      margin-top: 30px
+    &__round-img
+      margin: 0 0 20px
+      max-width: 240px
+      order: 1
+    &__gifts
+      .section__row
+        flex-direction: row
+      .section__column
+        align-items: flex-start
+        text-align: left
+
+  .footer
+    padding: 50px 24px
+    &__row, &__nav, &__links
+      flex-direction: column
+      align-items: flex-start
+    &__main
+      margin-bottom: 20px
+    &__row
+      margin-bottom: 20px
+      &:last-child
+        max-width: 100%
+        flex-wrap: wrap
+        .footer__paragraph:first-child, .footer__last-paragraphs
+          flex: 1
+          min-width: 100%
+          width: 100%
+
+    &__li
+      margin-right: 0
+      margin-top: 12px
+      &:first-child, &_mt0
+        margin-top: 0
+    &__link
+      font-size: 18px
+      font-weight: bold
+      font-family: "Futura PT", Calibri, sans-serif
+      &_contact
+        font-weight: normal
+    &__paragraph
+      font-weight: normal
+      &:not(:last-child)
+        margin-bottom: 20px
+
+    &__soc
+      margin-top: 20px
+
+  .rounded-gallery
+    &__elem
+      min-width: 148px
+
+  .gallery
+    margin-top: 30px
+    &__elem
+      width: 50%
+
+  .modal
+    &__wrapper
+      max-width: 100%
+      max-height: 100%
+      position: fixed
+      top: 100px
+      left: 0
+      flex-direction: column
+    &__main
+      justify-content: flex-start
+    &__account
+      margin-top: 24px
+    &__img
+      margin: 16px 16px 0 16px
+      align-self: flex-start
+      max-width: initial
+      height: initial
+      width: initial
+    &__close
+      display: none
+    &__end
+      margin-left: 16px
+      margin-top: 32px
+      align-self: flex-start
+      justify-content: flex-start
+
+/*стили от 0 до 600*/
+@media screen and (max-width: 600px)
+  .section
+    &__wrapper
+      padding: 0 12px
+    &__title
+      &_mt120
+        margin-top: 30px
+    &__text
+      &_tal
+        text-align: center
+    &__gifts
+      .section__column
+        order: 2
+        align-items: center
+        text-align: center
+        margin-bottom: 30px
+      .section__row
+        flex-direction: column
+        &:nth-child(even)
+          flex-direction: column
+      .section__h3
+        font-size: 28px
+
+/*стили от 0 до 319*/
+@media screen and (max-width: 320px)
+  .rounded-gallery
+    &__elem
+      width: 50%
+
+  .footer
+    padding: 25px 12px
+
+  .section
+    &__row
+      &_aifs
+        flex-direction: column
+        flex-wrap: nowrap
+    &__column
+      width: 100%
+      &:not(:first-child)
+        margin-top: 30px
+      &_flex_1
+        width: 100%
+        min-width: 100%
+        &:not(:first-child)
+          margin-right: 0
